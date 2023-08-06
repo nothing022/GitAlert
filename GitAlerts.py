@@ -12,11 +12,11 @@ from telegram.ext import (
       CallbackContext,
 )
 
-from telegram import (
+from telegram.ext import (
     InlineKeyboardButton, 
     InlineKeyboardMarkup, 
     Update,
-    ParseMode.MARKDOWN,
+    ParseMode,
 )
 
 server = Flask(__name__)

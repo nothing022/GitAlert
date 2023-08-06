@@ -28,7 +28,7 @@ else:
     GIT_REPO_URL = config.GIT_REPO_URL
     HEROKU_APPNAME = config.HEROKU_APPNAME
 
-updater = Updater(token=BOT_TOKEN, workers=1)
+updater = Updater(BOT_TOKEN=BOT_TOKEN, workers=1)
 dispatcher = updater.dispatcher
 
 log.info("If you need more help, join @ScenarioXsupport in Telegram.")

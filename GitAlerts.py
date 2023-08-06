@@ -6,11 +6,7 @@ from requests import get, post
 from os import environ
 import config
 
-from telegram.ext import (
-      CommandHandler,
-      Updater,
-      CallbackContext,
-)
+from telegram.ext import CommandHandler, Updater
 
 server = Flask(__name__)
 

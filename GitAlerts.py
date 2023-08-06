@@ -12,7 +12,7 @@ from telegram.ext import (
       CallbackContext,
 )
 
-from telegram.ext import (
+from telegram import (
     InlineKeyboardButton, 
     InlineKeyboardMarkup, 
     Update,

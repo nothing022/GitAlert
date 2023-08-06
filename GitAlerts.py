@@ -16,7 +16,7 @@ from telegram import (
     InlineKeyboardButton, 
     InlineKeyboardMarkup, 
     Update,
-    ParseMode,
+    ParseMode.MARKDOWN,
 )
 
 server = Flask(__name__)

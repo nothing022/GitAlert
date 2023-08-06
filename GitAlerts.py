@@ -6,7 +6,18 @@ from requests import get, post
 from os import environ
 import config
 
-from telegram.ext import CommandHandler, Updater
+from telegram.ext import (
+      CommandHandler,
+      Updater,
+      CallbackContext,
+)
+
+from telegram import (
+    InlineKeyboardButton, 
+    InlineKeyboardMarkup, 
+    Update,
+    ParseMode,
+)
 
 server = Flask(__name__)
 
@@ -28,7 +39,7 @@ else:
     GIT_REPO_URL = config.GIT_REPO_URL
     HEROKU_APPNAME = config.HEROKU_APPNAME
 
-updater = Updater(Updater=BOT_TOKEN, workers=1)
+updater = Updater(token=BOT_TOKEN, workers=1)
 dispatcher = updater.dispatcher
 
 log.info("If you need more help, join @ScenarioXsupport in Telegram.")
